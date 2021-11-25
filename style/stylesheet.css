@@ -13,6 +13,8 @@ html {
     font-family: 'Merriweather', serif;
 }
 
+/* -------- Nav bar -------------*/
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -26,7 +28,46 @@ nav {
 
 nav ul {
     display: flex;
-    width: 10rem;
+    width: 11rem;
     justify-content: space-between;
     list-style-type: none;
+}
+
+/* -------- Main Header ----------*/
+
+.main-header {
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: 'Bebas Neue', cursive;
+}
+
+header h1 {
+    color: #39BF50
+}
+
+/* ---------- About Section ---------*/
+
+.about {
+    background-color: #39BF50;
+    color: #26402B;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.about h2, .about h3 {
+    border-bottom: #26402B solid 3px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.about ul {
+    padding-left: 1rem;
+    display: flex;
+    justify-content: space-around;
 }
