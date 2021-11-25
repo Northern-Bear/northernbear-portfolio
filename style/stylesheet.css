@@ -90,9 +90,31 @@ header h1 {
 }
 
 .about ul {
-    padding-left: 1rem;
     display: flex;
     justify-content: space-around;
     text-align: center;
     list-style-type: none;
 }
+
+/* ---------- Projects Section ---------*/
+
+.projects {
+    height: 70vh;
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects h2 {
+    font-family: 'Bebas Neue', cursive;
+    border-bottom: #66FF8C solid .5vh;
+}
+
+.projects ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: center;
+}
+
