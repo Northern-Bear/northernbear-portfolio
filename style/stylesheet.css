@@ -99,7 +99,7 @@ header h1 {
 /* ---------- Projects Section ---------*/
 
 .projects {
-    height: 70vh;
+    height: 100vh;
     padding: 2vh;
     display: flex;
     flex-direction: column;
@@ -111,10 +111,28 @@ header h1 {
 }
 
 .projects ul {
+    height: 90vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     list-style-type: none;
     text-align: center;
+    justify-content: space-around;
 }
 
+/* ------- Footer Section ---------*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #66FF8C;
+    color: black;
+    height: 5.5vh;
+    padding: 0 1vh;
+}
+
+footer a, footer p {
+    height: fit-content;
+    position: relative;
+    top: 2vh;
+}
