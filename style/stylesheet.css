@@ -16,6 +16,8 @@ html {
 /* -------- Nav bar -------------*/
 
 nav {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     background-color: #79CA87;
@@ -31,6 +33,7 @@ nav ul {
     width: 11rem;
     justify-content: space-between;
     list-style-type: none;
+    font-weight: bold;
 }
 
 .nav-logo {
@@ -53,6 +56,18 @@ nav ul {
 
 header h1 {
     color: #39BF50
+}
+
+.gamer {
+    position: relative;
+    right: 15rem;
+    top: 0rem;
+}
+
+.coffee {
+    position: relative;
+    left: 10rem;
+    bottom: 0rem;
 }
 
 /* ---------- About Section ---------*/
