@@ -1,10 +1,12 @@
 Color
 
-#13401B
-#79CA87
-#39BF50
-#26402B
-#2A8C3A
+Dark Green - #16702D
+Light Green - #66FF8C
+Green - #39BD5A
+Dark Red - #700B11
+Light Red - #BD3940
 
 Font
 
+font-family: 'Bebas Neue', cursive;
+font-family: 'Merriweather', serif;

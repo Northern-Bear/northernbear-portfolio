@@ -8,8 +8,8 @@
 }
 
 html {
-    background-color: #26402B;
-    color: #79CA87;
+    background-color: black;
+    color: #66FF8C;
     width: fit-content;
     font-size: 2.4vh;
     font-family: 'Merriweather', serif;
@@ -22,12 +22,12 @@ nav {
     top: 0;
     display: flex;
     justify-content: space-between;
-    background-color: #79CA87;
-    color: #13401B;
-    height: 4.7vh;
+    background-color: #66FF8C;
+    color: black;
+    height: 5.5vh;
     padding: 0 1vh;
     padding-top: 1.7vh;
-    border-bottom: #2A8C3A solid .65vh;
+    border-bottom: #16702D solid .5vh;
 }
 
 nav ul {
@@ -39,9 +39,16 @@ nav ul {
 }
 
 .nav-logo {
+    color: black;
     height: fit-content;
     position: relative;
-    bottom: .3vh;
+    bottom: 1vh;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4vh;
+}
+
+.nav-logo span {
+    color: #700B11;
 }
 
 /* -------- Main Header ----------*/
@@ -57,23 +64,28 @@ nav ul {
 }
 
 header h1 {
-    color: #39BF50
+    color: #66FF8C
+}
+
+.gamer, .coffee {
+    color: #700B11
 }
 
 /* ---------- About Section ---------*/
 
 .about {
-    background-color: #39BF50;
-    color: #26402B;
+    background-color: #39BD5A;
+    color: black;
     height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 2vh;
+    border-bottom: #16702D solid .5vh;
 }
 
 .about h2, .about h3 {
-    border-bottom: #26402B solid .5vh;
+    border-bottom: black solid .5vh;
     font-family: 'Bebas Neue', cursive;
 }
 
