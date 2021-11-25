@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    background-color: #26402B;
+    color: #79CA87;
+    max-width: fit-content;
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #79CA87;
+    color: #13401B;
+    height: 2rem;
+    padding: 0 1rem;
+    padding-top: .75rem;
+    border-bottom: #2A8C3A solid 5px;
+}
+
+nav ul {
+    display: flex;
+    width: 10rem;
+    justify-content: space-between;
+    list-style-type: none;
+}
