@@ -33,6 +33,12 @@ nav ul {
     list-style-type: none;
 }
 
+.nav-logo {
+    height: fit-content;
+    position: relative;
+    bottom: .2rem;
+}
+
 /* -------- Main Header ----------*/
 
 .main-header {
@@ -70,4 +76,6 @@ header h1 {
     padding-left: 1rem;
     display: flex;
     justify-content: space-around;
+    text-align: center;
+    list-style-type: none;
 }
