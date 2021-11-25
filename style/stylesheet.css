@@ -1,3 +1,5 @@
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,8 +10,8 @@
 html {
     background-color: #26402B;
     color: #79CA87;
-    max-width: fit-content;
-    font-size: 18px;
+    width: fit-content;
+    font-size: 2.4vh;
     font-family: 'Merriweather', serif;
 }
 
@@ -22,15 +24,15 @@ nav {
     justify-content: space-between;
     background-color: #79CA87;
     color: #13401B;
-    height: 2rem;
-    padding: 0 1rem;
-    padding-top: .75rem;
-    border-bottom: #2A8C3A solid 5px;
+    height: 4.7vh;
+    padding: 0 1vh;
+    padding-top: 1.7vh;
+    border-bottom: #2A8C3A solid .65vh;
 }
 
 nav ul {
     display: flex;
-    width: 11rem;
+    width: 25vh;
     justify-content: space-between;
     list-style-type: none;
     font-weight: bold;
@@ -39,18 +41,18 @@ nav ul {
 .nav-logo {
     height: fit-content;
     position: relative;
-    bottom: .2rem;
+    bottom: .3vh;
 }
 
 /* -------- Main Header ----------*/
 
 .main-header {
-    height: 40rem;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 3rem;
+    font-size: 5vh;
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -58,32 +60,20 @@ header h1 {
     color: #39BF50
 }
 
-.gamer {
-    position: relative;
-    right: 15rem;
-    top: 0rem;
-}
-
-.coffee {
-    position: relative;
-    left: 10rem;
-    bottom: 0rem;
-}
-
 /* ---------- About Section ---------*/
 
 .about {
     background-color: #39BF50;
     color: #26402B;
-    height: 25rem;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 1rem;
+    padding: 2vh;
 }
 
 .about h2, .about h3 {
-    border-bottom: #26402B solid 3px;
+    border-bottom: #26402B solid .5vh;
     font-family: 'Bebas Neue', cursive;
 }
 
