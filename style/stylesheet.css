@@ -11,7 +11,7 @@ html {
     background-color: black;
     color: #66FF8C;
     width: fit-content;
-    font-size: 2.4vh;
+    font-size: 15px;
     font-family: 'Merriweather', serif;
 }
 
@@ -24,15 +24,15 @@ nav {
     justify-content: space-between;
     background-color: #66FF8C;
     color: black;
-    height: 5.5vh;
-    padding: 0 1vh;
-    padding-top: 1.7vh;
-    border-bottom: #16702D solid .5vh;
+    height: 2.4rem;
+    padding: 0 .5rem;
+    padding-top: .7rem;
+    border-bottom: #16702D solid 3px;
 }
 
 nav ul {
     display: flex;
-    width: 25vh;
+    width: 10.5rem;
     justify-content: space-between;
     list-style-type: none;
     font-weight: bold;
@@ -42,9 +42,9 @@ nav ul {
     color: black;
     height: fit-content;
     position: relative;
-    bottom: 1vh;
+    bottom: .5rem;
     font-family: 'Bebas Neue', cursive;
-    font-size: 4vh;
+    font-size: 1.7rem;
 }
 
 .nav-logo span {
@@ -54,12 +54,12 @@ nav ul {
 /* -------- Main Header ----------*/
 
 .main-header {
-    height: 90vh;
+    height: 39rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 5vh;
+    font-size: 2rem;
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -76,16 +76,16 @@ header h1 {
 .about {
     background-color: #39BD5A;
     color: black;
-    height: 70vh;
+    height: 40rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 2vh;
-    border-bottom: #16702D solid .5vh;
+    padding: 1rem;
+    border-bottom: #16702D solid 3px;
 }
 
 .about h2, .about h3 {
-    border-bottom: black solid .5vh;
+    border-bottom: black solid 3px;
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -99,19 +99,19 @@ header h1 {
 /* ---------- Projects Section ---------*/
 
 .projects {
-    height: 100vh;
-    padding: 2vh;
+    height: 50rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
 }
 
 .projects h2 {
     font-family: 'Bebas Neue', cursive;
-    border-bottom: #66FF8C solid .5vh;
+    border-bottom: #66FF8C solid 3px;
 }
 
 .projects ul {
-    height: 90vh;
+    height: 45rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -127,12 +127,12 @@ footer {
     justify-content: space-between;
     background-color: #66FF8C;
     color: black;
-    height: 5.5vh;
-    padding: 0 1vh;
+    height: 2.5rem;
+    padding: 0 1rem;
 }
 
 footer a, footer p {
     height: fit-content;
     position: relative;
-    top: 2vh;
+    top: .9rem;
 }
