@@ -13,6 +13,14 @@ html {
     width: fit-content;
     font-size: 15px;
     font-family: 'Merriweather', serif;
+    scroll-behavior: smooth;
+}
+
+:target::before {
+    content:'';
+    display: block;
+    height: 6rem;
+    margin: -3rem 0 0;
 }
 
 /* -------- Nav bar -------------*/
@@ -20,8 +28,6 @@ html {
 nav {
     position: sticky;
     top: 0;
-    display: flex;
-    justify-content: space-between;
     background-color: #66FF8C;
     color: black;
     height: 2.4rem;
@@ -30,12 +36,29 @@ nav {
     border-bottom: #16702D solid 3px;
 }
 
-nav ul {
-    display: flex;
-    width: 10.5rem;
-    justify-content: space-between;
+nav #my-links {
+    width: 40%;
+    position: absolute;
+    right: 0;
+    top: 2.43rem;
+    display: none;
+    
+}
+
+nav li {
     list-style-type: none;
+}
+
+
+nav .link {
+    color: black;
+    background-color: #66FF8C;
+    display: block;
+    text-decoration: none;
+    text-align: right;
     font-weight: bold;
+    padding: .2rem .5rem;
+    border-bottom: #16702D solid 3px;
 }
 
 .nav-logo {
@@ -51,6 +74,13 @@ nav ul {
     color: #700B11;
 }
 
+nav .icon {
+    display: block;
+    position: absolute;
+    top: .3rem;
+    right: .5rem;
+}
+
 /* -------- Main Header ----------*/
 
 .main-header {
@@ -61,6 +91,7 @@ nav ul {
     align-items: center;
     font-size: 2rem;
     font-family: 'Bebas Neue', cursive;
+    
 }
 
 header h1 {

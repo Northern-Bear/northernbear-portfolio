@@ -6,24 +6,27 @@
         <title>Northern Bear</title>
         <link rel="stylesheet" href="./style/stylesheet.css">
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+        <script src="./scripts/menu.js"></script>
     </head>
     <body>
         <nav>
-            <h3 class="nav-logo">Northern <span>Bear</span></h3>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Projects</li>
+            <a href="#home"><h3 class="nav-logo">Northern <span>Bear</span></h3></a>
+            <ul id="my-links">
+                <li><a href="#about" class="link">About</a></li>
+                <li><a href="#projects" class="link">Projects</a></li>
                 <!--<li>Contact</li>-->
             </ul>
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <img src="./images/icons8-menu-24.png" alt="">
+            </a>
         </nav>
         <main>
-            <header class="main-header">
+            <header class="main-header" id="home">
                 <h3 class="gamer">Gamer,</h3>
                 <h1>Web Developer,</h1>
                 <h3 class="coffee">Coffee Drinker</h3>
             </header>
-            <section class="about">
+            <section class="about" id="about">
                 <h2>About</h2>
                 <p>Hello, I'm Eric Bear.</p>
                 <p>Gamer, Carpenter, Web Developer.</p>
@@ -38,11 +41,17 @@
                     <li><img src="https://img.icons8.com/ios-filled/60/000000/javascript.png"/> <br> JavaScript</li>
                 </ul>
             </section>
-            <section class="projects">
+            <section class="projects" id="projects">
                 <h2>Projects</h2>
                 <ul>
-                    <li><img src="./images/Tea-Cozy.webp" alt="Tea Cozy mockup photo"> <br> "Tea Cozy" mockup</li>
-                    <li><img src="./images/Excursion.webp" alt="Excursion Mockup photo"> <br> "Excursion" mockup</li>
+                    <li><a href="https://northern-bear.github.io/tea-cozy-mockup/" target="_blank">
+                            <img src="./images/Tea-Cozy.webp" alt="Tea Cozy mockup photo"> <br> "Tea Cozy" mockup
+                        </a>
+                    </li>
+                    <li><a href="https://northern-bear.github.io/excursion-mockup/" target="_blank">
+                            <img src="./images/Excursion.webp" alt="Excursion Mockup photo"> <br> "Excursion" mockup
+                        </a>
+                    </li>
                 </ul>
             </section>
         </main>
