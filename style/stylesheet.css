@@ -99,7 +99,7 @@ header h1 {
 /* ---------- Projects Section ---------*/
 
 .projects {
-    height: 50rem;
+    height: 45rem;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -111,7 +111,7 @@ header h1 {
 }
 
 .projects ul {
-    height: 45rem;
+    height: 40rem;
     display: flex;
     align-items: center;
     flex-direction: column;
