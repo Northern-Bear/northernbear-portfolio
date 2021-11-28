@@ -10,7 +10,7 @@
 html {
     background-color: black;
     color: #66FF8C;
-    width: fit-content;
+    width: 100%;
     font-size: 15px;
     font-family: 'Merriweather', serif;
     scroll-behavior: smooth;
