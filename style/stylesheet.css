@@ -88,7 +88,7 @@ nav .icon {
 /* -------- Main Header ----------*/
 
 .main-header {
-    height: 39rem;
+    min-height: 40rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,11 +111,11 @@ header h1 {
 .about {
     background-color: #39BD5A;
     color: black;
-    height: 40rem;
+    min-height: 40rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 1rem;
+    padding: 1rem 2.5rem;
     border-bottom: #16702D solid 3px;
 }
 
@@ -134,8 +134,8 @@ header h1 {
 /* ---------- Projects Section ---------*/
 
 .projects {
-    height: 45rem;
-    padding: 1rem;
+    min-height: 45rem;
+    padding: 1rem 2.5rem;
     display: flex;
     flex-direction: column;
 }
@@ -170,4 +170,22 @@ footer a, footer p {
     height: fit-content;
     position: relative;
     top: .9rem;
+}
+
+@media (min-width: 75em) {
+    html {
+        font-size: 19px;
+    }
+
+    .main-header {
+        min-height: 46rem;
+        font-size: 4rem;  
+    }
+
+    .about,
+    .projects {
+        padding: 1rem 17rem;
+        min-height: 50rem
+    }
+
 }
