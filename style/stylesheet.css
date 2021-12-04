@@ -16,11 +16,23 @@ html {
     scroll-behavior: smooth;
 }
 
+a:link {
+    color: #700B11
+}
+
+a:visited {
+    color: #700B11
+  }
+
+a:hover {
+    color: #BD3940
+}
+
 :target::before {
     content:'';
     display: block;
     height: 6rem;
-    margin: -3rem 0 0;
+    margin-top: -3rem;
 }
 
 /* -------- Nav bar -------------*/
@@ -33,7 +45,8 @@ nav {
     height: 2.4rem;
     padding: 0 .5rem;
     padding-top: .7rem;
-    border-bottom: #66FF8C solid 3px;
+    box-shadow: 0 0.1rem 1.5rem #66FF8C;
+    border-bottom: #66FF8C solid 2px;
 }
 
 nav #my-links {
@@ -42,7 +55,7 @@ nav #my-links {
     right: 0;
     top: 2.43rem;
     display: none;
-    
+    box-shadow: 0.5rem 0.1rem 1rem #66FF8C;
 }
 
 nav li {
@@ -51,6 +64,10 @@ nav li {
 
 nav a {
     text-decoration: none;
+}
+
+nav a:hover {
+    color: #BD3940;
 }
 
 
@@ -62,7 +79,7 @@ nav .link {
     text-align: right;
     font-weight: bold;
     padding: .2rem .5rem;
-    border-bottom: #66FF8C solid 3px;
+    border-bottom: #66FF8C solid 2px;
 }
 
 .nav-logo {
@@ -113,23 +130,44 @@ header h1 {
 
 /* ---------- About Section ---------*/
 
-.about {
+.about-container {
     background-color: #16702D;
     color: black;
-    min-height: 40rem;
+    min-height: 45rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 1rem 2.5rem;
-    border-bottom: #39BD5A solid 3px;
+    padding: 2rem;
+    box-shadow: 0 4px 0.9rem 0.1rem #39BD5A;
 }
 
-.about h2, .about h3 {
+.about {
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about-p {
+    height: 17rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about-skills {
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about h2, .about-skills h3 {
     border-bottom: black solid 3px;
     font-family: 'Bebas Neue', cursive;
 }
 
-.about ul {
+.about-skills ul {
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -139,10 +177,11 @@ header h1 {
 /* ---------- Projects Section ---------*/
 
 .projects {
-    min-height: 45rem;
+    min-height: 50rem;
     padding: 1rem 2.5rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .projects h2 {
@@ -158,6 +197,10 @@ header h1 {
     list-style-type: none;
     text-align: center;
     justify-content: space-around;
+}
+
+.projects img {
+    box-shadow: 0rem 0rem 0.3rem #39BD5A;
 }
 
 /* ------- Footer Section ---------*/
@@ -177,9 +220,29 @@ footer a, footer p {
     top: .9rem;
 }
 
-@media (min-width: 75em) {
+@media (min-width: 70em) {
     html {
         font-size: 19px;
+    }
+
+    nav #my-links {
+        display: inline-flex;
+        justify-content: space-around;
+        width: 17%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        box-shadow: 0rem 0rem 0rem #66FF8C;
+    }
+
+    nav .link {
+        height: 2.4rem;
+        padding-top: .7rem;
+        box-shadow: 0 0 #66FF8C;
+    }
+
+    nav .icon {
+        display: none;
     }
 
     .main-header {
@@ -187,10 +250,45 @@ footer a, footer p {
         font-size: 4rem;  
     }
 
-    .about,
+    .about-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 50rem;
+        padding: 5rem;
+    }
+
+    .about {
+        width: 60%;
+        height: 30rem;
+        padding-bottom: 4rem;
+    }
+
+    .about-p {
+        height: 19rem;
+    }
+
+    .about-skills {
+        width: 30%;
+        height: 30rem;
+        padding-bottom: 17.3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
     .projects {
-        padding: 1rem 17rem;
-        min-height: 50rem
+        padding: 1rem 13rem;
+        padding-bottom: 20rem;
+    }
+
+    .projects ul {
+        height: 20rem;
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: space-around;
     }
 
 }
